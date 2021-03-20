@@ -1,0 +1,15 @@
+<div>
+<table class="table">
+  <thead>
+    <tr *ngIf="dataLoaded== true">
+      <th>Id</th>
+      <th>Brand Name</th>
+    </tr>
+  </thead>
+
+  <tr *ngFor="let brand of brands">
+    <th>{{ brand.id }}</th>
+    <th>{{ brand.name }}</th>
+  </tr>
+</table>
+</div>
